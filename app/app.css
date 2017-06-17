@@ -1,0 +1,57 @@
+/* app css stylesheet */
+
+html{
+  font-family: "Roboto";
+
+
+  background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  color:white;
+}
+.menu {
+  list-style: none;
+  margin-left: 50px;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+  text-transform: uppercase;
+  float:left;
+  width:30%;
+  font-size:40px;
+}
+
+.menu li a,a:visited{
+  color:white;
+  outline:none;
+  text-decoration:none;
+
+}
+
+.menu li a:hover{
+  color:red;
+}
+
+.menu:before {
+
+}
+
+.menu:after {
+
+}
+
+.menu > li {
+}
+
+.menu > li + li:before {
+
+  padding-right: 0.3em;
+}
+
+
+.home{
+  margin-left:20px;
+}
