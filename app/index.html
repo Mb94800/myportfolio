@@ -12,30 +12,40 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
 
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#!/view1">Accueil</a></li>
-    <li><a href="#!/view2">Mon parcours</a></li>
-    <li><a href="#!/view3">Mes projets</a></li>
-    <li><a href="#!/view4">Contact</a></li>
-
-  </ul>
-
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
-  <div ng-view></div>
 
 
 
+    <div class="content__left">
+
+      <img src="img/logoMB.png" width="310">
+      <ul class="menu">
+        <li class="tabmenu__active"><a href="#!/view1">Accueil</a></li>
+        <li><a href="#!/view2">Mon parcours</a></li>
+        <li><a href="#!/view3">Mes projets</a></li>
+        <li><a href="#!/view4">Contact</a></li>
+
+
+      </ul>
+    </div>
+
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="content">
+     <div ng-view class="content__generalview"></div>
+
+
+     </div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>

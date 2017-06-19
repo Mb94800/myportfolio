@@ -12,3 +12,23 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
+
+
+$(function() {                       //run when the DOM is ready
+    $(".menu li").click(function() {  //use a class, since your ID gets mangled
+        $(".menu li").removeClass("tabmenu__active");
+        $(this).addClass("tabmenu__active");      //add the class to the clicked element
+    });
+});
+
+app.controller('MainCtrl', function($scope) {
+
+    $scope.menuItems = ['Home', 'Contact', 'About', 'Other'];
+    $scope.activeMenu = $scope.menuItems[0];
+
+    $scope.setActive = function(menuItem) {
+        $scope.activeMenu = menuItem
+    }
+});
+
+

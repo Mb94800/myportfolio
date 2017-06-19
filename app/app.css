@@ -1,29 +1,56 @@
 /* app css stylesheet */
 
 html{
-  font-family: "Roboto";
-
-
-  background: #36d1dc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Oswald";
+  background-color: ghostwhite;
+  background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center top;
   background-attachment: fixed;
   background-repeat:no-repeat;
-  color:white;
+  color:#333;
 }
 .menu {
   list-style: none;
-  margin-left: 50px;
-  margin-bottom: 2em;
+  margin-left: 30px;
+  margin-bottom: 19em;
   padding: 0 0 0.5em;
   text-transform: uppercase;
-  float:left;
-  width:30%;
+
+
   font-size:40px;
+
+
 }
 
+.content{
+
+}
+.content__generalview{
+
+  width:60%;
+  padding:20px 20px;
+}
+
+.content__left{
+  background: -webkit-linear-gradient(to right, #36d1dc, #1ABC9C); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #36d1dc, #1ABC9C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width:310px;
+  float:left;
+  display:inline-block;
+}
+
+.home .name{
+  font-size:50px;
+}
+
+.home .home__desc{
+  font-size:22px;
+}
+.menu li{
+  margin-bottom:30px;
+  font-size:40px;
+}
 .menu li a,a:visited{
   color:white;
   outline:none;
@@ -31,8 +58,30 @@ html{
 
 }
 
+blue{
+  color:#3498db;
+}
+
+.home{
+  font-size: 40px;
+}
+
 .menu li a:hover{
-  color:red;
+  color:black;
+}
+
+
+.tabmenu__active a{
+
+  color:black !important;
+
+
+
+}
+
+.content__generalview{
+  margin-top:100px;
+  display:inline-block;
 }
 
 .menu:before {
@@ -53,5 +102,5 @@ html{
 
 
 .home{
-  margin-left:20px;
+  margin-left:30px;
 }
