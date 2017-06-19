@@ -40,12 +40,14 @@ html{
   display:inline-block;
 }
 
+
+
 .home .name{
   font-size:50px;
 }
 
-.home .home__desc{
-  font-size:22px;
+.home p{
+  font-size:29px;
 }
 .menu li{
   margin-bottom:30px;
