@@ -19,7 +19,42 @@ $(function() {                       //run when the DOM is ready
         $(".menu li").removeClass("tabmenu__active");
         $(this).addClass("tabmenu__active");      //add the class to the clicked element
     });
+
+
+    $( ".hamburger" ).click(function() {
+        $( ".contentleft__menu" ).slideToggle( "slow", function() {
+            $( ".hamburger" ).hide();
+            $( ".cross" ).show();
+        });
+    });
+
+    $( ".cross" ).click(function() {
+        $( ".contentleft__menu" ).slideToggle( "slow", function() {
+            $( ".cross" ).hide();
+            $( ".hamburger" ).show();
+        });
+    });
+
+    $(window).resize(function() {
+        if($(window).width() < 700){
+
+
+
+            $('.hamburger').show();
+        }else{
+            $('.contentleft__menu').show();
+        }
+    });
+
 });
+
+$( window ).resize(function() {
+    if($(window).width < 700){
+        alert("ok")
+        $(".content__logoMB").css("display","none")
+    }
+});
+
 
 app.controller('MainCtrl', function($scope) {
 
@@ -30,5 +65,7 @@ app.controller('MainCtrl', function($scope) {
         $scope.activeMenu = menuItem
     }
 });
+
+
 
 

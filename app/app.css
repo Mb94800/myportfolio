@@ -2,7 +2,7 @@
 
 html{
   font-family: "Oswald";
-  background-color: ghostwhite;
+  background-color: BLACK;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center top;
@@ -10,7 +10,7 @@ html{
   background-repeat:no-repeat;
   color:#333;
 }
-.menu {
+.contentleft__menu {
   list-style: none;
   margin-left: 30px;
   margin-bottom: 19em;
@@ -41,7 +41,6 @@ html{
 }
 
 
-
 .home .name{
   font-size:50px;
 }
@@ -49,11 +48,11 @@ html{
 .home p{
   font-size:29px;
 }
-.menu li{
+.contentleft__menu li{
   margin-bottom:30px;
   font-size:40px;
 }
-.menu li a,a:visited{
+.contentleft__menu li a,a:visited{
   color:white;
   outline:none;
   text-decoration:none;
@@ -68,7 +67,7 @@ blue{
   font-size: 40px;
 }
 
-.menu li a:hover{
+.contentleft__menu li a:hover{
   color:black;
 }
 
@@ -97,7 +96,7 @@ blue{
 .menu > li {
 }
 
-.menu > li + li:before {
+.contentleft__menu > li + li:before {
 
   padding-right: 0.3em;
 }
@@ -105,4 +104,101 @@ blue{
 
 .home{
   margin-left:30px;
+}
+
+
+
+.content__logoMBmobile{
+  display:none;
+}
+
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:black;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:13px 15px 0px 15px;
+  color:black;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.hamburger,.cross{
+  display:none;
+}
+
+@media screen and (max-width: 900px) {
+
+  .home{
+    font-size: 27px;
+
+  }
+
+  .content__generalview{
+    width:50%;
+  }
+  .home p{
+    font-size:22px;
+  }
+
+}
+@media screen and (max-width: 700px) {
+  .content__left{
+    width:100%;
+  }
+
+  .content__logoMB{
+    display:none;
+    background: url("img/logoMB__mobile.png");
+  }
+
+  .content__logoMBmobile{
+    display:block;
+    height:100%;
+    width:80%;
+  }
+
+  .contentleft__menu{
+    display:none;
+    margin-bottom:0px;
+    margin-top:0px;
+
+  }
+
+  .contentleft__menu li{
+    margin-bottom:0px;
+    font-size:28px;
+  }
+  .hamburger,.cross{
+    top:23px;
+  }
+
+  .content__generalview{
+    margin-top:0px;
+    width:100%;
+  }
+
+
 }
